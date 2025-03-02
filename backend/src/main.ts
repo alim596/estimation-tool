@@ -12,7 +12,7 @@ async function bootstrap() {
     credentials: true,
   });
 
-  await app.listen(4000);
+  await app.listen(process.env.PORT || 4000);
 }
 bootstrap().catch((err) => {
   console.error('Error during bootstrap', err);
