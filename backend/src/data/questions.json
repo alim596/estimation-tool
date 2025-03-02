@@ -1,0 +1,391 @@
+[
+    {
+      "title": "Design and Development Essentials",
+      "questions": [
+        {
+          "step": 1,
+          "category": "App size",
+          "question": "How big is your app?",
+          "ChildrenType":"ChoiceHorizontal",
+          "children": [
+            {
+              "title": "Small",
+              "description": "Design based on a UI kit, utilizing pre-designed components.",
+              "iconSrc": "/icons/small.svg"
+            },
+            {
+              "title": "Medium",
+              "description": "Your app has around 4-7 key feature screens.",
+              "iconSrc": "/icons/medium.svg"
+            },
+            {
+              "title": "Large",
+              "description": "Fully custom layout with more than 7 feature screens.",
+              "iconSrc": "/icons/large.svg"
+            }
+          ]
+        },
+        {
+          "step": 2,
+          "category": "UI Level",
+          "question": "What level of UI would you like?",
+          "ChildrenType":"ChoiceHorizontal",
+          "children": [
+            {
+              "title": "MVP",
+              "description": "Design based on a UI kit, utilizing pre-designed components.",
+              "iconSrc": "/icons/mvp.svg"
+            },
+            {
+              "title": "Basic",
+              "description": "Partial use of UI Kit + customized design.",
+              "iconSrc": "/icons/mvp.svg"
+            },
+            {
+              "title": "Polished",
+              "description": "Fully customized design.",
+              "iconSrc": "/icons/polished.svg"
+            }
+          ]
+        },
+        {
+          "step": 3,
+          "category": "Users & Accounts",
+          "question": "Users & Accounts",
+          "ChildrenType":"ChoiceVertical",
+          "children": [
+            {
+              "title": "Email/icons/Password Sign up",
+              "description": "Ability to log in using Email and password.",
+              "iconSrc": "/icons/mail.svg"
+            },
+            {
+              "title": "Facebook Sign Up",
+              "description": "Ability to log in using Facebook profile.",
+              "iconSrc": "/icons/facebook.svg"
+            },
+            {
+              "title": "Twitter Sign Up",
+              "description": "Ability to log in using Twitter profile.",
+              "iconSrc": "/icons/twitter.svg"
+            },
+            {
+              "title": "Google Sign Up",
+              "description": "Ability to log in using Google account.",
+              "iconSrc": "/icons/google.svg"
+            },
+            {
+              "title": "LinkedIn Sign Up",
+              "description": "Ability to log in using LinkedIn profile.",
+              "iconSrc": "/icons/linkedin.svg"
+            },
+            {
+              "title": "GitHub Sign Up",
+              "description": "Ability to log in using GitHub account.",
+              "iconSrc": "/icons/github.svg"
+            },
+            {
+              "title": "User Invitation Emails",
+              "description": "Invite a user to try your app.",
+              "iconSrc": "/icons/user-Invite.svg"
+            },
+            {
+              "title": "Subdomains",
+              "description": "An additional section of your main domain name.",
+              "iconSrc": "/icons/subdom.svg"
+            },
+            {
+              "title": "Custom Domains",
+              "description": "A unique branded name that identifies a website.",
+              "iconSrc": "/icons/domain.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Content and Interaction",
+      "questions": [
+        {
+          "step": 4,
+          "category": "User Generated Content",
+          "question": "User Generated Content",
+          "ChildrenType":"ChoiceVertical",
+          "children": [
+            {
+              "title": "Dashboard",
+              "description": "Your app's control center, where you can manage everything easily.",
+              "iconSrc": "/icons/dashboard.svg"
+            },
+            {
+              "title": "Activity Feed",
+              "description": "A real-time stream showing updates and interactions within the app.",
+              "iconSrc": "/icons/activity-feed.svg"
+            },
+            {
+              "title": "Media Uploading",
+              "description": "Tool to share media content effortlessly.",
+              "iconSrc": "/icons/media-upload.svg"
+            },
+            {
+              "title": "User Profiles",
+              "description": "A personalized space within the app for sharing information about oneself.",
+              "iconSrc": "/icons/user-profiles.svg"
+            },
+            {
+              "title": "Transactional Emails",
+              "description": "Emails that keep users informed about important updates.",
+              "iconSrc": "/icons/transactional-emails.svg"
+            },
+            {
+              "title": "Tags",
+              "description": "Labels to help organize content and make it easy to find.",
+              "iconSrc": "/icons/tags.svg"
+            },
+            {
+              "title": "Ratings or Reviews",
+              "description": "Sharing opinions and experiences to empower customers.",
+              "iconSrc": "/icons/ratings-reviews.svg"
+            },
+            {
+              "title": "Media Manipulation",
+              "description": "Tools to edit and improve media files.",
+              "iconSrc": "/icons/media-manipulation.svg"
+            },
+            {
+              "title": "Searching",
+              "description": "System designed search through in the app.",
+              "iconSrc": "/icons/search.svg"
+            }
+          ]
+        },
+        {
+          "step": 5,
+          "category": "Dates & Locations",
+          "question": "Dates & Locations",
+          "ChildrenType":"ChoiceVertical",
+          "children": [
+            {
+              "title": "Calendaring",
+              "description": "Plan events and stay organized with an integrated calendar feature.",
+              "iconSrc": "/icons/calendar.svg"
+            },
+            {
+              "title": "Display of Map Data",
+              "description": "Display locations seamlessly through interactive maps.",
+              "iconSrc": "/icons/maps.svg"
+            },
+            {
+              "title": "Geolocation",
+              "description": "Pinpoint exact location or find nearby points of interest effortlessly.",
+              "iconSrc": "/icons/location.svg"
+            },
+            {
+              "title": "Bookings",
+              "description": "Easily book services with streamlined functionality.",
+              "iconSrc": "/icons/booking.svg"
+            }
+          ]
+        },
+        {
+          "step": 6,
+          "question": "Social & Engagement",
+          "category": "Social & Engagement",
+          "ChildrenType":"ChoiceVertical",
+          "children": [
+            {
+              "title": "Messaging",
+              "description": "Communicate with app users through messaging.",
+              "iconSrc": "/icons/messaging.svg"
+            },
+            {
+              "title": "Forums or Commenting",
+              "description": "Engage in discussions and leave comments on forums.",
+              "iconSrc": "/icons/forum.svg"
+            },
+            {
+              "title": "Social Sharing",
+              "description": "Share content easily across various social media platforms.",
+              "iconSrc": "/icons/share.svg"
+            },
+            {
+              "title": "Push to Facebook Open Graph",
+              "description": "Integrate and share app activities on Facebook.",
+              "iconSrc": "/icons/facebook-open-graph.svg"
+            },
+            {
+              "title": "Push Notifications",
+              "description": "Stay informed with timely updates and notifications pushed to device.",
+              "iconSrc": "/icons/notify.svg"
+            }
+          ]
+        },
+        {
+          "step": 7,
+          "question": "Billing & eCommerce",
+          "category": "Billing & eCommerce",
+          "ChildrenType":"ChoiceVertical",
+          "children": [
+            {
+              "title": "Subscription Plans",
+              "description": "Charge your subscribers, setup automatic renewals and trials.",
+              "iconSrc": "/icons/subscription.svg"
+            },
+            {
+              "title": "Shopping Cart",
+              "description": "Enables you to select and review items, and complete purchases.",
+              "iconSrc": "/icons/shopping-cart.svg"
+            },
+            {
+              "title": "User Marketplace",
+              "description": "Allows users to buy and sell a variety of items within your app.",
+              "iconSrc": "/icons/marketplace.svg"
+            },
+            {
+              "title": "In-App Purchasing",
+              "description": "Users can effortlessly make purchases directly from your app.",
+              "iconSrc": "/icons/in-app-purchase.svg"
+            },
+            {
+              "title": "Payment Information Collection",
+              "description": "Securely store and manage user payment details for transactions.",
+              "iconSrc": "/icons/payment-info.svg"
+            },
+            {
+              "title": "Payment Processing",
+              "description": "Ensure secure and efficient handling of transactions within your app.",
+              "iconSrc": "/icons/payment-processing.svg"
+            },
+            {
+              "title": "Product Management",
+              "description": "Set the strategy, roadmap, and feature definition for products.",
+              "iconSrc": "/icons/product-management.svg"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "title": "Management and Analytics",
+      "questions": [
+        {
+          "step": 8,
+          "category": "Admin, Feedback, Analytics",
+          "question": "Admin & Feedback & Analytics",
+          "ChildrenType":"ChoiceVertical",
+          "children": [
+            {
+              "title": "CMS Integration",
+              "description": "Seamlessly manage and update content.",
+              "iconSrc": "/icons/cms.svg"
+            },
+            {
+              "title": "User Admin Pages",
+              "description": "Gain control over user management and permissions.",
+              "iconSrc": "/icons/user-admin.svg"
+            },
+            {
+              "title": "Moderation/icons/Content Approval",
+              "description": "Allow moderation and control of user-shared content.",
+              "iconSrc": "/icons/moderation.svg"
+            },
+            {
+              "title": "Support",
+              "description": "Provide assistance and address user queries.",
+              "iconSrc": "/icons/support.svg"
+            },
+            {
+              "title": "Usage Analytics",
+              "description": "Gain valuable insights into user behavior and interaction.",
+              "iconSrc": "/icons/analytics.svg"
+            },
+            {
+              "title": "Crash Reporting",
+              "description": "Receive real-time alerts and insights into app performance issues.",
+              "iconSrc": "/icons/crash-report.svg"
+            },
+            {
+              "title": "Performance Monitoring",
+              "description": "Track and enhance your app's overall efficiency.",
+              "iconSrc": "/icons/performance.svg"
+            },
+            {
+              "title": "Multilingual Support",
+              "description": "Offer your app in multiple languages for a broader audience.",
+              "iconSrc": "/icons/multilingual.svg"
+            }
+          ]
+        },
+        {
+          "step": 9,
+          "category":"External APIs and Integrations",
+          "question": "External APIs & Integration",
+          "ChildrenType":"ChoiceVertical",
+          "children": [
+            {
+              "title": "Connect to one or more third-party services",
+              "description": "Link your app with external services, expanding functionality and features.",
+              "iconSrc": "/icons/third-party.svg"
+            },
+            {
+              "title": "An API for others to integrate with your app",
+              "description": "Enable external parties to integrate their services with your app.",
+              "iconSrc": "/icons/public-api.svg"
+            },
+            {
+              "title": "SMS Messaging",
+              "description": "For direct and instant communication within your app.",
+              "iconSrc": "/icons/sms.svg"
+            },
+            {
+              "title": "Phone Number Masking",
+              "description": "Enhance privacy and security when exchanging contact info.",
+              "iconSrc": "/icons/phone-mask.svg"
+            }
+          ]
+        },
+        {
+          "step": 10,
+          "category": "Security Hours",
+          "question": "Security Hours",
+          "ChildrenType": "ChoiceHorizontal",
+          "children": [
+            {
+              "title": "SSL Certificate based Security",
+              "description": "Ensure encrypted and secure communication between users and your app.",
+              "iconSrc": "/icons/ssl.svg"
+            },
+            {
+              "title": "DDoS Protection",
+              "description": "Safeguard your app against Distributed Denial of Service attacks.",
+              "iconSrc": "/icons/ddos.svg"
+            },
+            {
+              "title": "Two Factor Authentication",
+              "description": "Require an additional layer of verification for secure logins.",
+              "iconSrc": "/icons/2fa.svg"
+            }
+          ]
+        },
+        {
+          "step": 11,
+          "category":"Mobile Specific Features",
+          "question": "App Specific Development Hours", 
+          "ChildrenType": "ChoiceHorizontal",
+          "children": [
+            {
+              "title": "App Specific Development",
+              "description": "Customized app that meets unique needs.",
+              "iconSrc": "/icons/app-dev.svg"
+            },
+            {
+              "title": "Project Manager",
+              "description": "Benefit from coordination and oversight for your app's specific development task.",
+              "iconSrc": "/icons/project-manager.svg"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+  
