@@ -63,7 +63,7 @@ export default function Home() {
 
   return (
     <div className="max-h-auto p-4">
-      <div className="flex flex-col items-center w-[1440px] mx-auto shadow-custom bg-white">
+      <div className="flex flex-col items-center max-w-[1440px] mx-auto shadow-custom bg-white">
         <div  className="h-[910px]">
           <HeroSection />
         </div>
