@@ -17,11 +17,10 @@ import { fetchQuestions } from '@/utils/api';
 type AnswersState = Record<number, string[]>;
 
 export default function Home() {
-  const [sections, setSections] = useState<Section[]>([]);
-  useEffect(() => {
-    fetchQuestions().then((data: Section[]) => setSections(data));
-  }, []);
+    const [sections, setSections] = useState<Section[]>([]);
 
+  const [isAuthenticated, setIsAuthenticated] = useState(false);
+  const correctPassword = "mypassword"; // Set your password here
   // 1. Track the platforms the user has chosen
   const [selectedPlatforms, setSelectedPlatforms] = useState<string[]>([]);
 
@@ -30,6 +29,26 @@ export default function Home() {
 
   // 3. Track all question answers by step number => array of strings
   const [answers, setAnswers] = useState<AnswersState>({});
+  
+  useEffect(() => {
+    fetchQuestions().then((data: Section[]) => setSections(data));
+  }, []);
+
+  useEffect(() => {
+    if (!isAuthenticated) {
+      const enteredPassword = prompt("Enter password to access:");
+      if (enteredPassword === correctPassword) {
+        setIsAuthenticated(true);
+      } else {
+        alert("Incorrect password. Access denied.");
+        window.location.href = "https://google.com"; // Redirect if wrong password
+      }
+    }
+  }, [isAuthenticated]);
+
+  if (!isAuthenticated) {
+    return null; // Prevents rendering until authenticated
+  }
 
   // When a user toggles a platform
   const togglePlatform = (platform: string) => {
