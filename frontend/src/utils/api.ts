@@ -3,7 +3,7 @@ import { Section, SubmissionResponse } from '@/types/types';
 
 //Fetches the questions' data (array of sections).
 export async function fetchQuestions(): Promise<Section[]> {
-  const response = await fetch('https://estimation-tool-backend.vercel.app/questions/all');
+  const response = await fetch('https://estimation-tool.onrender.com/questions/all');
   return response.json();
 }
 
@@ -18,7 +18,7 @@ export async function createSubmission({
   hourlyRate: number;
   answers: Record<string, string[]>;
 }): Promise<SubmissionResponse> {
-  const response = await fetch('https://estimation-tool-backend.vercel.app/submissions', {
+  const response = await fetch('https://estimation-tool.onrender.com/submissions', {
     method: 'POST',
     headers: { 'Content-Type': 'application/json' },
     body: JSON.stringify({ hourlyRate, answers }),
@@ -33,7 +33,7 @@ export async function createSubmission({
  
 //fetch a specific submission by its ID.
 export async function getSubmission(id: number): Promise<SubmissionResponse> {
-  const response = await fetch(`https://estimation-tool-backend.vercel.app/submissions/${id}`);
+  const response = await fetch(`https://estimation-tool.onrender.com/submissions/${id}`);
   if (!response.ok) {
     throw new Error('Failed to fetch submission');
   }
